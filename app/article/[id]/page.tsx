@@ -7,6 +7,7 @@ import "./article.css";
 
 import type { Metadata, ResolvingMetadata } from 'next'
 import mime from 'mime-types';
+import { notFound } from 'next/navigation'
 
 export async function generateMetadata({
     params: { id },
@@ -15,6 +16,9 @@ export async function generateMetadata({
   }): Promise<Metadata> {
 
     const postData = await getPostData(id);
+    if(!postData) {
+        return {}
+    }
     const host = process.env.NEXT_PUBLIC_HOST || 'localhost:3000';
     const url = `${process.env.NEXT_PUBLIC_PROTOCOL || 'http'}://${host}/article/${id}`;
     // 이미지 URL
@@ -40,19 +44,16 @@ export async function generateMetadata({
             publishedTime: postData.publishedTime,
             authors: postData.author,
             section: postData.section,
-            tag: postData.tags,
+            tags: postData.tags,
         },
     };
 }
 
-
-export async function getStaticPaths() {
+export async function generateStaticParams() {
     const paths = getAllPostIds();
-    return {
-        paths,
-        fallback: false // Can be set to 'blocking' if you prefer
-    };
+    return paths
 }
+   
 
 export default async function Page({
     params: { id },
@@ -61,7 +62,7 @@ export default async function Page({
   }) {
     const postData = await getPostData(id)
     if (!postData) {
-        return <div>Loading...</div>; // Add a loading state
+        return notFound()
     }
     return (
         <div className='bg-white'>

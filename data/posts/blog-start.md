@@ -6,7 +6,7 @@ imgSrc: "/posts/img/blog-start-thumb.webp"
 publishedTime: "2024-02-25T13:37:09.082Z"
 author: "최혁"
 section: "잡담"
-tag: ["잡담","코딩","코딩테스트","취업","nextjs","leetcode"]
+tags: ["잡담","코딩","코딩테스트","취업","nextjs","leetcode"]
 ---
 
 # 내가 만든 개발 블로그 시작 🚀
