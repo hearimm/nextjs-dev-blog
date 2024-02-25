@@ -3,6 +3,10 @@ title: "내가 만든 개발 블로그 시작"
 date: "2024-02-25"
 excerpt: "취업 준비와 코딩 테스트의 도전, 리트코드와 코딩 테스트 공부의 변화, 개발 블로그 시작 결심, 새로운 프론트엔드 도전"
 imgSrc: "/posts/img/blog-start-thumb.webp"
+publishedTime: "2024-02-25T13:37:09.082Z"
+author: "최혁"
+section: "잡담"
+tag: ["잡담","코딩","코딩테스트","취업","nextjs","leetcode"]
 ---
 
 # 내가 만든 개발 블로그 시작 🚀
