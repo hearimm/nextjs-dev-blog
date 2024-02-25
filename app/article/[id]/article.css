@@ -1,0 +1,41 @@
+/* 예시 CSS 코드 */
+h1 {
+    font-size: 48px; /* h1 태그에 대한 글꼴 크기 설정 */
+    font-weight: 700; /* h1 태그에 대한 글꼴 굵기 설정 */
+    color: rgb(51, 61, 75); /* h1 태그에 대한 글꼴 색상 설정 */
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+    font-weight: bold;
+    color: rgb(17 24 39);
+    margin: 24px 0px 4px;
+  }
+
+  h3 {
+    font-size: 24px;
+    letter-spacing: 0em;
+    line-height: 1.6;
+    font-weight: bold;
+    color: var(--adaptiveGrey900);
+    margin: 24px 0px 4px;
+  }
+  
+  p {
+    line-height: 1.6; /* p 태그에 대한 줄 높이 설정 */
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(51, 61, 75); /* p 태그에 대한 글꼴 색상 설정 */
+
+    margin-bottom: 8px;
+    margin-top: 24px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  

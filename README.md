@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# 그냥 개발자의 개발 블로그
+
+## Nextjs14 + NextUI + TailwindCSS + Markdown
+2014.02.25 기준 최신 nextjs14 app router를 활용한 개발 블로그
+
+## How to use
+data/posts : post markdown 파일 생성 시 리스트에 추가 key는 파일명  
+pulbic/posts/img : article 에 표시할 이미지 파일
+
+
 ## Getting Started
 
 First, run the development server:
