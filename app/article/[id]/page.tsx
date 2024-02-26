@@ -67,7 +67,7 @@ export default async function Page({
     return (
         <div className='bg-white'>
             <Navbar />
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center px-12'>
                 <ImageUI
                     // as={NextImage}
                     alt="Article Thumbnail"

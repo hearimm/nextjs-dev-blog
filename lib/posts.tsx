@@ -75,13 +75,20 @@ export function getAllPosts() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
 
-  return fileNames.map(fileName => {
-    // Remove ".md" from file name to get id
+  const allPostsData: PostData[] = fileNames.map(fileName => {
     const id = fileName.replace(/\.md$/, '');
-
-    // Get the post data
     const postData = getPostData(id);
-
-    return postData;
+    return postData; // getPostData가 null을 반환할 수 있음
+  })
+  .filter((data): data is PostData => data !== null)
+  .sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else if (a.date > b.date) {
+      return -1;
+    } else {
+      return 0;
+    }
   });
+  return allPostsData;
 }
