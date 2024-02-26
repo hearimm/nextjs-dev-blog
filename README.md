@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # 그냥 개발자의 개발 블로그
 
+블로그 링크 : <https://just-dev.vercel.app>
+
 ## Nextjs14 + NextUI + TailwindCSS + Markdown
 2014.02.25 기준 최신 nextjs14 app router를 활용한 개발 블로그
 
